@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Scoreboard</title>
+</head>
+<body>
+    <div class="container bungee-regular">
+        <div>
+            <h3 class="team">HOME</h3>
+            <div class="board-point">25</div>
+            <div class="points">
+                <div class="point">+ 1</div>
+                <div class="point">+ 2</div>
+                <div class="point">+ 3</div>
+            </div>
+        </div>
+        <div class="tracker">    
+            <div class="time" id="timer">12:00</div>
+            <div class="time" id="period">4</div>
+            <p>Period</p>
+            <button class="restart bungee-regular">NEW GAME</button>
+        </div>
+        <div>
+            <h3 class="team">GUEST</h3>
+            <div class="board-point">0</div>
+            <div class="points">
+                <div class="point">+ 1</div>
+                <div class="point">+ 2</div>
+                <div class="point">+ 3</div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
