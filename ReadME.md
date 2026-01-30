@@ -2,7 +2,7 @@
 
 - This is a solo project from scrimba fullstack developer course
 - Built a basketball scoreboard using HTML,CSS and JS
-  -I could not get hold of design on figma so i came up with my own design
+- I could not get hold of design on figma so i came up with my own design
 
 ## Getting Started
 
