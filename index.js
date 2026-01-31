@@ -1,10 +1,12 @@
 let pointHome = 0
 let pointGuest = 0
 
+let homeScoreEl;
+let guestScoreEl;
 //interact with DOM
 document.addEventListener("DOMContentLoaded", function () {
-  let homeScoreEl = document.getElementById("homescore-el");
-  let guestScoreEl = document.getElementById("guestscore-el");
+  homeScoreEl = document.getElementById("homescore-el");
+  guestScoreEl = document.getElementById("guestscore-el");
 });
 
 
