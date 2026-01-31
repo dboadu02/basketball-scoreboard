@@ -2,61 +2,25 @@ let pointHome = 0
 let pointGuest = 0
 
 //interact with DOM
-let homeScoreEl = document.getElementById("homescore-el")
-let guestScoreEl = document.getElementById("guestscore-el")
+document.addEventListener("DOMContentLoaded", function () {
+  let homeScoreEl = document.getElementById("homescore-el");
+  let guestScoreEl = document.getElementById("guestscore-el");
+});
 
-//increase point by 1
-//home team
-function plusOneHome(){
- pointHome += 1 
- console.log(pointHome)
 
- homeScoreEl.textContent = pointHome;
+//change scores for home or guest
+function addPoints(team, points) {
+  if (team === 'home') {
+    pointHome += points;
+    homeScoreEl.textContent = pointHome;
+    console.log(pointHome + ' points added to home')
+  } else {
+    pointGuest += points;
+    guestScoreEl.textContent = pointGuest;
+    console.log(pointGuest + " points added to guest");
+  }
 }
 
-//guest team
-function plusOneGuest() {
-  pointGuest += 1;
-  console.log(pointGuest);
-
-  guestScoreEl.textContent = pointGuest;
-}
-
-
-//increase point by 2
-//home team
-function plusTwoHome(){
- pointHome += 2 
- console.log(pointHome)
-
- homeScoreEl.textContent = pointHome;
-}
-
-//guest team
-function plusTwoGuest() {
-  pointGuest += 2;
-  console.log(pointGuest);
-
-  guestScoreEl.textContent = pointGuest;
-}
-
-
-//increase point by 3
-//home team
-function plusThreeHome(){
- pointHome += 3 
- console.log(pointHome)
-
- homeScoreEl.textContent = pointHome;
-}
-
-//guest team
-function plusThreeGuest() {
-  pointGuest += 3;
-  console.log(pointGuest);
-
-  guestScoreEl.textContent = pointGuest;
-}
 
 
 //reset points
@@ -65,5 +29,6 @@ function resetPoints(){
    pointGuest = 0
 
    homeScoreEl.textContent = pointHome;
-   homeScoreEl.textContent = pointGuest;
+   guestScoreEl.textContent = pointGuest;
+   console.log('Game reset')
 }

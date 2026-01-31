@@ -17,9 +17,9 @@
             <h3 class="team">HOME</h3>
             <div class="board-point" id="homescore-el">0</div>
             <div class="points">
-                <button class="point" onclick="plusOneHome()">+ 1</button>
-                <button class="point" onclick="plusTwoHome()">+ 2</button>
-                <button class="point" onclick="plusThreeHome()">+ 3</button>
+                <button class="point" onclick="addPoints('home', 1)">+ 1</button>
+                <button class="point" onclick="addPoints('home', 2)">+ 2</button>
+                <button class="point" onclick="addPoints('home', 3)">+ 3</button>
             </div>
         </div>
         <div class="tracker">    
@@ -32,12 +32,12 @@
             <h3 class="team">GUEST</h3>
             <div class="board-point" id="guestscore-el">0</div>
             <div class="points">  
-            <button class="point" onclick="plusOneGuest()">+ 1</button>
-            <button class="point" onclick="plusTwoGuest()">+ 2</button>
-            <button class="point" onclick="plusThreeGuest()">+ 3</button>
+            <button class="point" onclick="addPoints('guest', 1)">+ 1</button>
+            <button class="point" onclick="addPoints('guest', 2)">+ 2</button>
+            <button class="point" onclick="addPoints('guest', 3)">+ 3</button>
             </div>
         </div>
     </div>
-    <script type="module" src="/index.js"></script>
+    <script  src="/index.js"></script>
 </body>
 </html>
