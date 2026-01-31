@@ -16,4 +16,4 @@ npm start
 ## Deployment
 
 - Deployed on netlify
-- livesite URL: ()
+- livesite URL: (https://basketball-scoreboarrd.netlify.app/)

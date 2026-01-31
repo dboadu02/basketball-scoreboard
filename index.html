@@ -15,26 +15,26 @@
     <div class="container bungee-regular">
         <div>
             <h3 class="team">HOME</h3>
-            <div class="board-point">25</div>
+            <div class="board-point" id="homescore-el">0</div>
             <div class="points">
-                <div class="point">+ 1</div>
-                <div class="point">+ 2</div>
-                <div class="point">+ 3</div>
+                <button class="point" onclick="plusOneHome()">+ 1</button>
+                <button class="point" onclick="plusTwoHome()">+ 2</button>
+                <button class="point" onclick="plusThreeHome()">+ 3</button>
             </div>
         </div>
         <div class="tracker">    
             <div class="time" id="timer">12:00</div>
             <div class="time" id="period">4</div>
             <p>Period</p>
-            <button class="restart bungee-regular">NEW GAME</button>
+            <button class="restart bungee-regular" onclick="resetPoints()">NEW GAME</button>
         </div>
         <div>
             <h3 class="team">GUEST</h3>
-            <div class="board-point">0</div>
-            <div class="points">
-                <div class="point">+ 1</div>
-                <div class="point">+ 2</div>
-                <div class="point">+ 3</div>
+            <div class="board-point" id="guestscore-el">0</div>
+            <div class="points">  
+            <button class="point" onclick="plusOneGuest()">+ 1</button>
+            <button class="point" onclick="plusTwoGuest()">+ 2</button>
+            <button class="point" onclick="plusThreeGuest()">+ 3</button>
             </div>
         </div>
     </div>
