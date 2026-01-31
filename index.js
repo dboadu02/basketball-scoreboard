@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //change scores for home or guest
-function addPoints(team, points) {
+export function addPoints(team, points) {
   if (team === 'home') {
     pointHome += points;
     homeScoreEl.textContent = pointHome;
@@ -26,7 +26,7 @@ function addPoints(team, points) {
 
 
 //reset points
-function resetPoints(){
+export function resetPoints(){
    pointHome = 0
    pointGuest = 0
 
@@ -34,3 +34,8 @@ function resetPoints(){
    guestScoreEl.textContent = pointGuest;
    console.log('Game reset')
 }
+
+
+// Make functions globally accessible
+globalThis.addPoints = addPoints;
+globalThis.resetPoints = resetPoints;
