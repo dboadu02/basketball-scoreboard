@@ -59,18 +59,18 @@ function updateCountdown(){
 }
 
 //used addEventListener to check if the function works when clicked without making it global
-document.getElementById("pauseBtn").addEventListener("click", pauseTimer);
-document.getElementById("playBtn").addEventListener("click", play);
+document.getElementById("pauseBtn").addEventListener("click", pauseAndPlay)
 
-function pauseTimer(){
-  clearInterval(countdownInterval)
-  countdownInterval = null
-  console.log('paused')
-}
-
-function play(){
-  countdownInterval = setInterval(updateCountdown, 1000);
-  console.log('start game')
+//pause and play
+function pauseAndPlay(){
+  if(countdownInterval == null){
+    countdownInterval = setInterval(updateCountdown, 1000);
+    console.log("play game");
+    return
+  }
+  clearInterval(countdownInterval);
+  countdownInterval = null;
+  console.log("pause game")
 }
 
 
