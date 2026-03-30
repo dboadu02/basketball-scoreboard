@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: myFont;
     src: url('Technology-Bold.ttf');
-}
+} */
 
 .bungee-regular {
   font-family: "Bungee", sans-serif;
@@ -12,36 +12,34 @@
 
 body {
     margin: 0;
-    text-align: center;
+    text-align: center;                                     
 }
 
 .container {
-    background-image: url("images/scoreboardbg.jpg");
-    background-size: cover;
+    background-color: #1B244A;
     width: 450px;
     height: 270px;
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;   
+    margin: 150px auto;   
     border-radius: 10px;
 }
 
 .team {
-    color: white;
+    color: #EEEEEE;
     font-size: 26px;
 }
 
 .board-point {
-    background-color: rgb(10, 10, 10);
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    background-color: #080001;
     width: 100px;
     height: 70px;
-    color: rgb(255, 0, 64);
-    border: 1px solid white;
-    border-radius: 3px;
-    font-family: myFont;
+    color: #F94F6D;
+    border-radius: 5px;
     font-size: 64px;
     padding: 5px 10px 0 0;
-    text-align: right;
+    text-align: center; 
 }
 
 .points{
@@ -49,27 +47,29 @@ body {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    font-family: 'Cursed Timer ULiL', sans-serif;
 }
+
 .point{
-    font-family: myFont;
-    font-size: 10px;
-    width: 30px;
-    height: 25px;
-    border: 1px solid white;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 12px;
+    width: 35px;
+    height: 30px;
+    border: 2px solid #9AABD8;
     border-radius: 5px;
-    background-color: black;
-    color: white;
+    color: #9AABD8;
+    background: none;
     
 }
 
 .point:hover{
     cursor: pointer;
-    background-color: rgb(29, 28, 28); 
 
 }
 
 
 .tracker {
+    font-family: 'Cursed Timer ULiL', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,7 +94,7 @@ body {
     background-color: rgb(10, 10, 10);
     border: 1px solid white;
     border-radius: 3px;
-    font-family: myFont;
+    font-family: 'Cursed Timer ULiL', sans-serif;
     padding-top: 2px;
     font-size: 20px;
 
@@ -102,17 +102,17 @@ body {
 
 #timer{
     width: 80px;
-    height: 40px;
+    height: 30px;
     color: rgb(243, 184, 36);
-    font-size: 36px;
+    font-size: 24px;
     padding-top: 5px;
 }
 
 #period{
-    width: 40px;
-    height: 30px;
+    width: 30px;
+    height: 20px;
     color: rgb(8, 236, 8);
-    font-size: 26px;
+    font-size: 18px;
     text-shadow: 1px 1px 1px green;
 
 }
